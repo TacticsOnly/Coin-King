@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coinato Prototype</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main id="app">
+    <section class="room">
+      <div class="scanlines"></div>
+      <header>
+        <div>
+          <h1>COINATO</h1>
+          <p>Münz-Roguelite-Prototyp · 8 Münzen · 3 Würfe · Shop nach jeder Runde</p>
+        </div>
+        <button id="newRun">Neuer Run</button>
+      </header>
+
+      <section class="hud">
+        <div><span>Runde</span><b id="round">1</b></div>
+        <div><span>Ziel</span><b id="target">12</b></div>
+        <div><span>Punkte</span><b id="score">0</b></div>
+        <div><span>Bank</span><b id="bank">0</b></div>
+        <div><span>Würfe</span><b id="throws">0 / 3</b></div>
+      </section>
+
+      <section class="table3d">
+        <div id="coins" class="coins"></div>
+        <div class="controls">
+          <button id="throwBtn">Münzen werfen</button>
+          <button id="endBtn">Runde beenden</button>
+        </div>
+        <div id="log" class="log"></div>
+      </section>
+
+      <section class="panels">
+        <article>
+          <h2>Shop</h2>
+          <div id="shop" class="shop"></div>
+        </article>
+        <article>
+          <h2>Glücksbringer</h2>
+          <div id="charms" class="charms"></div>
+        </article>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
